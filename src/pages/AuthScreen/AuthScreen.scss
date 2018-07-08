@@ -1,0 +1,29 @@
+.authscreen {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    img {
+        transition: opacity .4s linear .4s;
+        object-fit: cover;
+    }
+
+    .bg-unloaded {
+        opacity: 0;
+    }
+
+    .bg-loaded {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

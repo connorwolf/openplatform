@@ -1,0 +1,68 @@
+@import '../../css/_colours.scss';
+
+.authbox {
+    .lg-cont {
+        background-color: $background1;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+
+        padding: 20px;
+        
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.72);
+
+        animation: lg-cont-fadein 1.5s;
+
+        text-align: center;
+        color: white;
+
+        border-radius: 5px;
+
+        width: 350px;
+
+        .nopass {
+            color: $blurple;
+            position: relative;
+            left: -30%;
+            top: -16px;
+            font-size: 13px;
+        }
+
+        .nopass:hover {
+            text-decoration: underline;    
+        }
+
+
+        h1 {
+
+            letter-spacing: .5px;
+
+            font-weight: 100;
+            font-size: 26px;
+            line-height: 32px;
+            margin-bottom: 8px;
+
+            color: white;
+        }
+
+        h2 {
+            font-weight: 100;
+            font-size: 18px;
+            margin-top: 0;
+            
+            line-height: 22px;
+
+            color: $subheading1;
+        }
+    }
+}
+
+@keyframes lg-cont-fadein {
+    0% {
+        transform: translate(-50%, -52.5%);
+        opacity: 0;
+    }
+}
