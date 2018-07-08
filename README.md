@@ -31,7 +31,7 @@ The platform can be built by running either of the following commands:
 $ yarn run build
 $ npm run build
 ```
-This will output a static web app into the `dist` directory, which can then be run using a module such as [serve][3].
+This will output a static web app into the `build` directory, which can then be run using a module such as [serve][3].
 
 ## DISCLAIMER
 All of the code, excluding the modules that this project makes use of, was written by me, and was not copied from anywhere.
