@@ -29,6 +29,16 @@
     line-height: 22px;
     color: #72767d; }
 
+.authbox .token-wrapper {
+  margin-top: 20px; }
+  .authbox .token-wrapper a {
+    font-size: 15px;
+    font-weight: 200;
+    color: #da72da;
+    text-decoration: none; }
+  .authbox .token-wrapper a:hover {
+    text-decoration: underline; }
+
 @keyframes lg-cont-fadein {
   0% {
     transform: translate(-50%, -52.5%);

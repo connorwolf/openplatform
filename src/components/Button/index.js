@@ -12,7 +12,7 @@ class Button extends React.Component {
     }
 
     render() {
-        return <button className={this.className} onClick={this.onClick}>{this.text}</button>
+        return <input type="submit" className={this.className} onClick={this.onClick} value={this.text}></input>
     }
 }
 

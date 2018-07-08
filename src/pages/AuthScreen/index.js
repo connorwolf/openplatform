@@ -12,7 +12,7 @@ class AuthScreen extends React.Component {
         return (
         <div className="authscreen">
             <FadeImg src={background} />
-            <AuthBox/>
+            <AuthBox fields={["email", "password"]}/>
         </div>
         );
     }

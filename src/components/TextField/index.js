@@ -5,30 +5,24 @@ import './TextField.css';
 class TextField extends React.Component {
     constructor(props) {
         super(props);
-        this.className = props.className + ' input textfield';
-        this.type = props.type;
-        this.name = props.name;
 
         this.state = { content: '' };
         this.handleChange = this.handleChange.bind(this);
-
+    
     }
 
-    handleChange(evt) {
-        evt.preventDefault();
-        console.log(evt.target.value);
-        this.setState({
-            content: evt.target.value
-        });
+    handleChange(event) {
+        const text = event.target.value;
+        this.props.onChange(this.props.name, text);
     }
 
     render() {
         return(
             <div className="textfield-wrapper">
                 <h5 className="textfield-title">
-                    {this.name}
+                    {this.props.name}
                 </h5>
-                <input value={this.state.content} type={this.type} className="textfield" onChange={this.handleChange}/>
+                <input value={this.props.value} type={this.props.type} onChange={this.handleChange} className="textfield"/>
             </div>
         );
     }
