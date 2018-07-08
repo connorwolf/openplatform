@@ -59,8 +59,8 @@ class AuthBox extends React.Component {
                             <h1>Welcome back!</h1>
                             <h2>And no, I'm not ripping off Discord.</h2>
 
-                            <Route exact path="/" component={EmailPasswordAuth}/>
-                            <Route path="/token" component={TokenAuth}/>
+                            <Route exact path="/login/" component={EmailPasswordAuth}/>
+                            <Route path="/login/token/" component={TokenAuth}/>
                         </div>
                     </Router>
                 </div>

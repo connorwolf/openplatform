@@ -1,0 +1,42 @@
+@import '../../../../css/_colours';
+
+.navbar {
+
+    text-align: left;
+
+    padding: 10px;
+
+    a:hover {
+        color: $button-hover
+    }
+
+    a:active {
+        color: $button-active
+    }
+
+    a {
+        padding-right: 5px;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+
+        transition: background-color .2s ease,
+        color .2s ease;
+
+    }
+
+    span {
+        padding-right: 15px;
+        color: $pinkple;
+        font-size: 25px;
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+
+    .navlink-right {
+        float: right;
+        border: 1px solid $pinkple;
+        border-radius: 10px;
+        padding: 4px;
+    }
+}

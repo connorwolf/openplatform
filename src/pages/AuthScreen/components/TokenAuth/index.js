@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import TextField from '../TextField';
-import Button from '../Button';
+import TextField from '../../../../components/TextField';
+import Button from '../../../../components/Button';
 
-class EmailPasswordAuth extends React.Component {
+class TokenAuth extends React.Component {
     constructor() {
         super()
         this.state = {
-            email: '',
-            password: ''
+            token: ''
         }
 
         this.handleFieldChange = this.handleFieldChange.bind(this);
@@ -25,15 +24,14 @@ class EmailPasswordAuth extends React.Component {
     render() {
         return(
             <div>
-                <TextField name="email" type="email" onChange={this.handleFieldChange} value={this.state["email"]}/>
-                <TextField name="password" type="password" onChange={this.handleFieldChange} value={this.state["password"]} />
+                <TextField name="token" type="text" onChange={this.handleFieldChange} value={this.state["token"]}/>
                 <Button text="Login" color="pinkple" onClick={this.handleLogin}/>
                 <div className="authbox token-wrapper">
-                    <Link to='/token'>Have a token?</Link>
+                    <Link to='/login/'>Prefer an email and password?</Link>
                 </div>
             </div>
         );
     }
 }
 
-export default EmailPasswordAuth;
+export default TokenAuth;

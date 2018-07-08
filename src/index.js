@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+    BrowserRouter as Router,
+    Route
+} from 'react-router-dom';
 
 import registerServiceWorker from './registerServiceWorker';
 
 import AuthScreen from './pages/AuthScreen';
+import HomePage from './pages/HomePage';
 import './css/app.css';
 
 class App extends React.Component {
@@ -12,7 +17,12 @@ class App extends React.Component {
     }
     render() {
         return(
-            <AuthScreen/>
+            <Router>
+                <div>
+                    <Route exact path="/" component={HomePage}/>
+                    <Route path="/login" component={AuthScreen}/>
+                </div>
+            </Router>
         );
     }
 }

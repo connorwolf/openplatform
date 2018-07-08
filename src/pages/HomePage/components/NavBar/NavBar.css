@@ -1,0 +1,24 @@
+.navbar {
+  text-align: left;
+  padding: 10px; }
+  .navbar a:hover {
+    color: #c468c4; }
+  .navbar a:active {
+    color: #ae5bae; }
+  .navbar a {
+    padding-right: 5px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color .2s ease, color .2s ease; }
+  .navbar span {
+    padding-right: 15px;
+    color: #da72da;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 2px; }
+  .navbar .navlink-right {
+    float: right;
+    border: 1px solid #da72da;
+    border-radius: 10px;
+    padding: 4px; }
