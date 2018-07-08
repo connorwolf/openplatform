@@ -7,7 +7,7 @@
   margin: 0;
   color: #b9bbbe;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px;
   margin-bottom: 5px; }
 
@@ -32,4 +32,4 @@
   border-color: #040405; }
 
 .textfield:focus {
-  border-color: #7289da; }
+  border-color: #da72da; }

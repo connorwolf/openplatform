@@ -9,10 +9,11 @@
     img {
         transition: opacity .4s linear .4s;
         object-fit: cover;
+        filter: hue-rotate(80deg);
     }
 
     .bg-unloaded {
-        opacity: 0;
+        opacity: 0; 
     }
 
     .bg-loaded {

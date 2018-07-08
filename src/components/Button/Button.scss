@@ -1,3 +1,5 @@
+@import '../../css/_colours.scss';
+
 .btn {
     border: none;
     width: 100%;
@@ -10,19 +12,19 @@
     transition: background-color .2s ease, color .2s ease;
 }
 
-.btn-blurple:hover {
-    background-color: #677bc4;
+.btn-pinkple:hover {
+    background-color: #c468c4;
 }
 
-.btn-blurple:active {
-    background-color: #5b6eae;
+.btn-pinkple:active {
+    background-color: #ae5bae;
 }
 
 .btn-green {
     background-color: #47e247;
 }
 
-.btn-blurple {
-    background-color: #7289DA;
+.btn-pinkple {
+    background-color: $pinkple;
     color: white;
 }

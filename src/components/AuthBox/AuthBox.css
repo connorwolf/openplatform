@@ -13,12 +13,6 @@
   color: white;
   border-radius: 5px;
   width: 350px; }
-  .authbox .lg-cont .nopass {
-    color: #7289DA;
-    position: relative;
-    left: -30%;
-    top: -16px;
-    font-size: 13px; }
   .authbox .lg-cont .nopass:hover {
     text-decoration: underline; }
   .authbox .lg-cont h1 {

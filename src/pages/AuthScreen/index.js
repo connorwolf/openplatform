@@ -11,7 +11,7 @@ class AuthScreen extends React.Component {
     render() {
         return (
         <div className="authscreen">
-            <FadeImg src={background}/>
+            <FadeImg src={background} />
             <AuthBox/>
         </div>
         );

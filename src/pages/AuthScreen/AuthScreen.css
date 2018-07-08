@@ -6,7 +6,8 @@
   top: 0; }
   .authscreen img {
     transition: opacity .4s linear .4s;
-    object-fit: cover; }
+    object-fit: cover;
+    filter: hue-rotate(80deg); }
   .authscreen .bg-unloaded {
     opacity: 0; }
   .authscreen .bg-loaded {

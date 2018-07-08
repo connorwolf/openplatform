@@ -20,7 +20,7 @@ class AuthBox extends React.Component {
                         <h2>And no, I'm not ripping off Discord.</h2>
                         <TextField name="email" type="email"/>
                         <TextField name="password" type="password"/>
-                        <Button text="Login" color="blurple" onClick={this.handleLogin}/>
+                        <Button text="Login" color="pinkple" onClick={this.handleLogin}/>
                     </div>
                 </div>
             </div>

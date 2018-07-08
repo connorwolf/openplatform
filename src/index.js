@@ -4,10 +4,12 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import AuthScreen from './pages/AuthScreen';
-
-import './index.css';
+import './css/app.css';
 
 class App extends React.Component {
+    componentDidMount() {
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    }
     render() {
         return(
             <AuthScreen/>
