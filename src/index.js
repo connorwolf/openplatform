@@ -5,7 +5,7 @@ import {
     Route
 } from 'react-router-dom';
 
-import registerServiceWorker from './registerServiceWorker';
+import {unregister} from './registerServiceWorker';
 
 import AuthScreen from './pages/AuthScreen';
 import HomePage from './pages/HomePage';
@@ -28,4 +28,4 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App/>, document.getElementById('root'));
-registerServiceWorker();
+unregister();
